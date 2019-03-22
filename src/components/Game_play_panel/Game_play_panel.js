@@ -1,7 +1,23 @@
 import React, {Component, Fragment} from 'react';
 import './Game_play_panel.scss';
 
+
+
 class GamePlayPanel extends Component {
+
+componentWillMount() {
+    this.itemsArray = this.createItemsArray([op,op], 3)
+}
+
+    createItemsArray = (itemsArray, itemsNumber) => {
+        let itemsArray = [];
+        for (let i = 0; i <= itemsNumber; i++) {
+            let x = Math.random((0 - itemsArray.length) * itemsArray.length);
+            itemsArray.push(arr[x])
+        }
+        return itemsArray
+    };
+
     render() {
         return (
             <Fragment>

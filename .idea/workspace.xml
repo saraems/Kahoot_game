@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c677147e-f7bc-4359-a951-25c493221407" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,38 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="225">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,10 +47,10 @@
         <option value="$PROJECT_DIR$/src/components/App/App.scss" />
         <option value="$PROJECT_DIR$/src/components/Game/Game.scss" />
         <option value="$PROJECT_DIR$/src/components/Game/Game.js" />
-        <option value="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js" />
         <option value="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.js" />
         <option value="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.scss" />
         <option value="$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss" />
+        <option value="$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js" />
       </list>
     </option>
   </component>
@@ -119,28 +93,7 @@
               <item name="kahoot-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kahoot-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kahoot-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kahoot-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kahoot-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Game_play_panel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kahoot-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kahoot-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Game_score_panel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,12 +137,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553265614771</updated>
-      <workItem from="1553265619839" duration="15070000" />
+      <workItem from="1553265619839" duration="15935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15070000" />
+    <option name="totallyTimeSpent" value="15935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -329,17 +282,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -350,10 +303,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Game_score_panel/Game_score_panel.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Game_play_panel/Game_play_panel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="225">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
