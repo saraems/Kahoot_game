@@ -32,10 +32,10 @@ class GameScorePanel extends Component {
                     </div>
                 </div>
                 <div className='score_game_panel__bonus'>
-                    Bonuses <span id='players_bonus'>90</span>
+                    Bonuses: <span id='players_bonus'>90</span>
                 </div>
                 <div className="score_game_panel__resume_game">
-                    <div className="total">Total <span id='total_score'>902</span></div>
+                    <div className="total">Total: <span id='total_score'>902</span></div>
                     <button className='new_game_btn'>New Game</button>
                 </div>
             </section>
