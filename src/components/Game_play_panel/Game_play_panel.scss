@@ -1,0 +1,16 @@
+.main_game_panel_container {
+  height: 100%;
+  width: 60%;
+}
+
+.main_game_panel__header {
+  height: 15%;
+  width: 100%;
+}
+
+.main_game_panel__body {
+  min-height: 95%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+}

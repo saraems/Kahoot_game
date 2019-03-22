@@ -1,0 +1,27 @@
+.score_game_panel_container {
+  height: 100%;
+  width: 40%;
+  background-color: lightgrey;
+}
+
+.score_game_panel__header {
+  height: 15%;
+  width: 100%;
+}
+
+.score_game_panel__body {
+  min-height: 60%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+}
+
+.score_game_panel__bonus {
+  height: 10%;
+  width: 100%;
+  background-color: lightslategray;
+}
+
+.score_game_panel__resume_game {
+
+}
