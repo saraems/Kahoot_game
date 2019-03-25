@@ -8,11 +8,11 @@ class Game extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            collectedItems: [],
             itemsArray: [],
-            playersScore: [],
+            collectedItems: [],
+            score: [],
             bonus: 0,
-            totalScore: 0
+            total: 0
         };
 
         this.items = [{
@@ -60,56 +60,63 @@ class Game extends Component {
     collectItem(index, item) {
         const itemArr = this.state.itemsArray.filter((ite, i) => i !== index);
 
-        this.playersScore(this.state.collectedItems, item);
+        this.score(this.state.collectedItems, item);
 
         this.setState({
-            collectedItems: [this.state.collectedItems, item],
+            collectedItems: [...this.state.collectedItems, item],
             itemsArray: itemArr,
-            totalScore: this.state.totalScore += item.unitPoints
+            total: this.state.total + item.unitPoints
         });
 
-        console.log(this.state.playersScore);
+        console.log(this.state.score);
     }
 
-    playersScore(collectedItems, item) {
+    score(collectedItems, item) {
 
         if (!collectedItems.includes(item)) {
             let playersItem = {
                 item: item.item,
                 qty: 1,
+                unitPoints: item.unitPoints,
                 points: item.unitPoints,
             };
            this.setState({
-               playersScore: [ playersItem, ...this.state.playersScore]
+               score: [ playersItem, ...this.state.score]
            })
         } else {
-            let localPlayersScore = this.state.playersScore;
+            let localScore = this.state.score;
             let bonus = this.state.bonus;
 
-            for (let i = 0; i < localPlayersScore.length; i++) {
-                if (localPlayersScore[i].item === item.item) {
-                    localPlayersScore[i].qty += 1;
-                    if (localPlayersScore[i].item === 'B' && localPlayersScore[i].qty % 3 === 0) {
-                        bonus = item.unitPoints;
-                        console.log(item.unitPoints);
-                        localPlayersScore[i].points += item.unitPoints
+            for (let i = 0; i < localScore.length; i++) {
+                if (localScore[i].item === item.item) {
+                    localScore[i].qty += 1;
+                    localScore[i].points += localScore[i].unitPoints;
+                    if ((localScore[i].item === 'B' || localScore[i].item === 'A') && localScore[i].qty % 3 === 0) {
+                        bonus += item.unitPoints;
+                        localScore[i].points += item.unitPoints;
+                        this.setState({
+                            total: this.state.total += item.unitPoints
+                        })
                     }
                 }
             }
 
             this.setState({
-                playersScore: [...localPlayersScore],
-                bonus: bonus
+                score: [...localScore],
+                bonus: bonus,
             })
         }
     }
 
+    newGame() {
+        window.location.reload();
+    }
 
     render() {
         return (
             <div className='game_container'>
                 <GamePlayPanel itemsArray={ this.state.itemsArray } collectedItems={ this.state.collectedItems } collectItem={ (index, item) => this.collectItem(index, item) } />
-                <GameScorePanel collectedItems={ this.state.collectedItems } playersScore={ this.state.playersScore } totalScore={ this.state.totalScore } bonus={ this.state.bonus }/>
+                <GameScorePanel collectedItems={ this.state.collectedItems } score={ this.state.score } total={ this.state.total } bonus={ this.state.bonus } newGame={ this.newGame }/>
             </div>
         );
     }

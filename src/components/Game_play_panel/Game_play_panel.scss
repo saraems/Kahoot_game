@@ -23,7 +23,7 @@
 }
 
 .main_game_panel__body {
-  min-height: 90%;
+  height: 90%;
   width: 100%;
   padding: 5%;
   display: flex;
@@ -39,6 +39,11 @@
   width: 20%;
   margin: 3%;
   height: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
   box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
   background-color: lightpink;
 }
@@ -50,7 +55,7 @@
   background-color: yellow;
 }
 .C {
-  background-color: purple;
+  background-color: crimson;
 
 }
 .D {
@@ -58,9 +63,9 @@
   background-color: black;
 }
 .E {
-  background-color: red;
+  background-color: mediumvioletred;
 
 }
 .F {
-  background-color: darkgreen;
+  background-color: greenyellow;
 }

@@ -1,8 +1,8 @@
 {
-  "name": "kahoot-game",
+  "name": "Kahoot_game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saraems.github.io/kahoot-game/",
+  "homepage": "https://saraems.github.io/Kahoot_game/",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
