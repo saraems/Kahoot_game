@@ -1,13 +1,13 @@
 {
   "main.css": "/Kahoot_game/static/css/main.12b7f671.chunk.css",
-  "main.js": "/Kahoot_game/static/js/main.8a78915e.chunk.js",
-  "main.js.map": "/Kahoot_game/static/js/main.8a78915e.chunk.js.map",
-  "runtime~main.js": "/Kahoot_game/static/js/runtime~main.53ba3764.js",
-  "runtime~main.js.map": "/Kahoot_game/static/js/runtime~main.53ba3764.js.map",
-  "static/js/2.6c3aeb2a.chunk.js": "/Kahoot_game/static/js/2.6c3aeb2a.chunk.js",
-  "static/js/2.6c3aeb2a.chunk.js.map": "/Kahoot_game/static/js/2.6c3aeb2a.chunk.js.map",
+  "main.js": "/Kahoot_game/static/js/main.8e622633.chunk.js",
+  "main.js.map": "/Kahoot_game/static/js/main.8e622633.chunk.js.map",
+  "runtime~main.js": "/Kahoot_game/static/js/runtime~main.8475e696.js",
+  "runtime~main.js.map": "/Kahoot_game/static/js/runtime~main.8475e696.js.map",
+  "static/js/2.cfb6abb5.chunk.js": "/Kahoot_game/static/js/2.cfb6abb5.chunk.js",
+  "static/js/2.cfb6abb5.chunk.js.map": "/Kahoot_game/static/js/2.cfb6abb5.chunk.js.map",
   "index.html": "/Kahoot_game/index.html",
-  "precache-manifest.9a570ff8114de194ed0189822b064a5d.js": "/Kahoot_game/precache-manifest.9a570ff8114de194ed0189822b064a5d.js",
+  "precache-manifest.9b72f390d84e2d855006316206284a1c.js": "/Kahoot_game/precache-manifest.9b72f390d84e2d855006316206284a1c.js",
   "service-worker.js": "/Kahoot_game/service-worker.js",
   "static/css/main.12b7f671.chunk.css.map": "/Kahoot_game/static/css/main.12b7f671.chunk.css.map"
 }

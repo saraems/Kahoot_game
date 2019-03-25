@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Kahoot_game/precache-manifest.9a570ff8114de194ed0189822b064a5d.js"
+  "/Kahoot_game/precache-manifest.9b72f390d84e2d855006316206284a1c.js"
 );
 
 workbox.clientsClaim();
