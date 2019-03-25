@@ -8,43 +8,18 @@ class Game extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            items: this.props.items,
             itemsArray: [],
             collectedItems: [],
             score: [],
             bonus: 0,
             total: 0
         };
-
-        this.items = [{
-            item: 'A',
-            unitPoints: 50
-        },
-            {
-                item: 'B',
-                unitPoints: 30
-            },
-            {
-                item: 'C',
-                unitPoints: 20
-            },
-            {
-                item: 'D',
-                unitPoints: 15
-            },
-            {
-                item: 'E',
-                unitPoints: 10
-            },
-            {
-                item: 'F',
-                unitPoints: 5
-            },
-        ];
     }
 
     componentWillMount() {
         this.setState({
-            itemsArray: this.createItemsArray(this.items, 15)
+            itemsArray: this.createItemsArray(this.state.items, 15)
         });
     }
 
@@ -91,7 +66,14 @@ class Game extends Component {
                 if (localScore[i].item === item.item) {
                     localScore[i].qty += 1;
                     localScore[i].points += localScore[i].unitPoints;
-                    if ((localScore[i].item === 'B' || localScore[i].item === 'A') && localScore[i].qty % 3 === 0) {
+                    if (localScore[i].item === 'A' && localScore[i].qty % 3 === 0) {
+                        bonus += item.unitPoints;
+                        localScore[i].points += item.unitPoints;
+                        this.setState({
+                            total: this.state.total += item.unitPoints
+                        })
+                    }
+                    if (localScore[i].item === 'B' && localScore[i].qty % 2 === 0) {
                         bonus += item.unitPoints;
                         localScore[i].points += item.unitPoints;
                         this.setState({

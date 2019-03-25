@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Kahoot! game | Eng | [GitHubPage](https://saraems.github.io/Kahoot_game/)
+Project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), `gh-pages` & `node-sass`.
 
-In the project directory, you can run:
+-----------------------------------
+### Brief description
+The simple browser based game points system that calculates the total points awarded to a player for a number of items they have collected in a game.
 
-### `npm start`
+Individual letters of the alphabet are used to identify the items (A, B, C, and so on). 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Items are scored individually. Some items are worth more if collected in multiples: collect n of them,
+and user’ll get y points. For example, item ‘A’ might be worth 50 points individually, but this
+week we have a special bonus: collect three ‘A’s and they’ll be worth 200 points instead of 150.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+This weeks rewards are:
+<img width="229" alt="bonus" src="https://user-images.githubusercontent.com/43315389/54919569-6d5ec600-4f01-11e9-9224-dd6f862b5795.PNG">
 
-### `npm test`
+### Composition
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        1. App Component.
+    
+            1.1. Game Component (contains all states and methods passed to it's children through props).
+    
+                1.1.1. Game_play_panel.
+                1.1.2. Game_score_panel.
 
-### `npm run build`
+### Parametrization
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To the Game Component can be passed an array of any number of Objects. Each Object represents one item's patten and have to be composed in a such way:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```ruby
+        {
+            item: <String or Number> (item's unique name),
+            unitPoints: <Number> (points number after collecting an item)
+        }
+```
+Number of randomly rendered items on the page for each game is set by default to 15. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Number of rendered items as well as adding bonuses to total score can be easily parametrized and changed for future game proposes due to product development.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Layout
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="542" alt="layout" src="https://user-images.githubusercontent.com/43315389/54919572-6fc12000-4f01-11e9-9146-0dc10955e252.PNG">
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
